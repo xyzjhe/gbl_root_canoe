@@ -20,6 +20,9 @@ while true; do
     break
   fi
 done
+
+# 持久化保存语言配置，给WebUI读取
+ksud module config set user_lang $LANG 2>/dev/null
 sleep 1
 
 # 定义多语言文本
